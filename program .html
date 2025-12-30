@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Jahanvi ❤️</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top, #fff0f5, #ffffff);
+  text-align: center;
+  color: #444;
+  overflow-x: hidden;
+}
+
+h1 {
+  margin-top: 40px;
+  font-size: 2.7em;
+}
+
+.glow span {
+  color: #e91e63;
+  text-shadow: 0 0 10px #ff9ecf, 0 0 25px #ffb6c1;
+  animation: glowPulse 2s infinite alternate;
+}
+
+@keyframes glowPulse {
+  from { text-shadow: 0 0 8px #ff9ecf; }
+  to { text-shadow: 0 0 30px #ff69b4; }
+}
+
+h2 {
+  color: #e91e63;
+  margin-top: 40px;
+}
+
+p {
+  max-width: 520px;
+  margin: 15px auto;
+  font-size: 1.1em;
+}
+
+.divider {
+  width: 90px;
+  height: 4px;
+  background: linear-gradient(to right, #e91e63, #ffb6c1);
+  margin: 25px auto;
+  border-radius: 5px;
+}
+
+/* Photos */
+.photos img {
+  width: 88%;
+  max-width: 340px;
+  margin: 22px auto;
+  border-radius: 26px;
+  box-shadow: 0 20px 38px rgba(0,0,0,0.25);
+  display: block;
+}
+
+/* Cards */
+.card {
+  background: rgba(255,255,255,0.97);
+  margin: 16px auto;
+  padding: 20px;
+  width: 92%;
+  max-width: 460px;
+  border-radius: 22px;
+  box-shadow: 0 14px 32px rgba(233,30,99,0.18);
+  font-size: 1.05em;
+}
+
+/* Countdown */
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 25px 0;
+  flex-wrap: wrap;
+}
+
+.time-box {
+  background: white;
+  padding: 14px 18px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(233,30,99,0.2);
+  min-width: 72px;
+}
+
+.time-box span {
+  display: block;
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #e91e63;
+}
+
+/* Proposal */
+.proposal {
+  background: linear-gradient(to bottom, #fff, #fff0f5);
+  margin: 50px auto;
+  padding: 32px 20px;
+  max-width: 540px;
+  border-radius: 28px;
+  box-shadow: 0 22px 42px rgba(233,30,99,0.25);
+}
+
+button {
+  padding: 14px 26px;
+  border: none;
+  border-radius: 26px;
+  background: #e91e63;
+  color: white;
+  font-size: 1em;
+}
+
+/* Footer */
+footer {
+  margin: 45px 0;
+  color: #e91e63;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+/* Falling hearts */
+.heart {
+  position: fixed;
+  top: -10px;
+  font-size: 22px;
+  color: rgba(233,30,99,0.75);
+  animation: fall linear infinite;
+  z-index: 0;
+}
+
+@keyframes fall {
+  from { transform: translateY(-10px); opacity: 1; }
+  to { transform: translateY(110vh); opacity: 0; }
+}
+
+/* Heart burst */
+@keyframes burst {
+  from { transform: translateY(0); opacity: 1; }
+  to { transform: translateY(-90px); opacity: 0; }
+}
+</style>
+</head>
+
+<body>
+
+<h1 class="glow">Happy Birthday <span>Jahanvi</span> ❤️</h1>
+<div class="divider"></div>
+
+<p>
+This little corner of the internet exists for one reason — you.
+</p>
+
+<h2>Counting Down to Your Day ✨</h2>
+
+<div class="countdown">
+  <div class="time-box"><span id="days">0</span>Days</div>
+  <div class="time-box"><span id="hours">0</span>Hours</div>
+  <div class="time-box"><span id="minutes">0</span>Minutes</div>
+  <div class="time-box"><span id="seconds">0</span>Seconds</div>
+</div>
+
+<div class="photos">
+  <img src="photo1.jpg">
+  <img src="photo2.jpg">
+  <img src="photo3.jpg">
+</div>
+
+<h2>Reasons Why I Love You</h2>
+
+<div class="card">1. Your kindness makes every space warmer.</div>
+<div class="card">2. You understand me without words.</div>
+<div class="card">3. You turn ordinary moments into memories.</div>
+<div class="card">4. Your smile feels like home.</div>
+<div class="card">5. You make me want to be better every day.</div>
+
+<div class="card">6. You make silence comforting.</div>
+<div class="card">7. Your laughter heals.</div>
+<div class="card">8. You love deeply.</div>
+<div class="card">9. You bring peace.</div>
+<div class="card">10. You feel like destiny.</div>
+
+<div class="card">11. You inspire me.</div>
+<div class="card">12. You believe in me.</div>
+<div class="card">13. You are gentle.</div>
+<div class="card">14. You care endlessly.</div>
+<div class="card">15. You feel like safety.</div>
+
+<div class="card">16. You make love easy.</div>
+<div class="card">17. You make days brighter.</div>
+<div class="card">18. You are beautiful inside.</div>
+<div class="card">19. You are my favourite person.</div>
+<div class="card">20. Because loving you feels right.</div>
+
+<div class="proposal">
+  <h2>A Little Surprise 💝</h2>
+  <button onclick="showLove()">Tap Here</button>
+  <br><br>
+  <button onclick="openLetter()">Read My Letter 💌</button>
+
+  <p id="secret" style="display:none; font-size:1.2em; margin-top:20px;">
+    Loving you is my favourite thing in this world ❤️
+  </p>
+</div>
+
+<footer>
+Forever grateful for you 💖  
+<br>29 January 2026
+</footer>
+
+<!-- LOVE LETTER -->
+<div id="loveLetter" style="
+display:none;
+position:fixed;
+top:0; left:0;
+width:100%; height:100%;
+background:rgba(255,240,245,0.98);
+z-index:9999;
+padding:30px;
+overflow:auto;
+">
+
+<h2 style="color:#e91e63;">My Love Letter For You 💖</h2>
+
+<p style="
+font-size:1.5em;
+line-height:1.9;
+max-width:650px;
+margin:30px auto;
+">
+Jahanvi,<br><br>
+
+I’ve thought a lot about how to write this,  
+because how do you put someone so special into words?  
+Still, I’ll try — because you deserve to know.
+
+<br><br>
+
+You walked into my life quietly,  
+but somehow changed everything.  
+Days feel lighter with you,  
+and even difficult moments feel easier  
+just knowing you exist.
+
+<br><br>
+
+You have this beautiful way of making people feel seen,  
+heard, and cared for.  
+The way you smile, the way you listen,  
+the way you simply are —  
+it all feels rare and precious to me.
+
+<br><br>
+
+With you, love doesn’t feel loud or forced.  
+It feels calm.  
+It feels safe.  
+It feels like home.
+
+<br><br>
+
+You inspire me without trying,  
+support me without asking,  
+and love in a way that feels honest and pure.  
+You make me want to grow,  
+to be kinder,  
+to be better — every single day.
+
+<br><br>
+
+This website may just be code and colors,  
+but behind it is a heart that truly cares for you.  
+Every detail here exists because  
+you matter more than you know.
+
+<br><br>
+
+Happy Birthday, Jahanvi.  
+You will always have a very special place in my heart ❤️
+</p>
+
+<button onclick="closeLetter()">Close 💗</button>
+</div>
+
+<script>
+/* Falling hearts */
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.className = "heart";
+  heart.innerHTML = "❤";
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.animationDuration = (3 + Math.random() * 4) + "s";
+  document.body.appendChild(heart);
+  setTimeout(() => heart.remove(), 7000);
+}
+setInterval(createHeart, 400);
+
+/* Countdown */
+const targetDate = new Date("January 29, 2026 00:00:00").getTime();
+setInterval(() => {
+  const now = new Date().getTime();
+  const diff = targetDate - now;
+  document.getElementById("days").innerText = Math.floor(diff / (1000*60*60*24));
+  document.getElementById("hours").innerText = Math.floor((diff / (1000*60*60)) % 24);
+  document.getElementById("minutes").innerText = Math.floor((diff / (1000*60)) % 60);
+  document.getElementById("seconds").innerText = Math.floor((diff / 1000) % 60);
+}, 1000);
+
+/* Surprise */
+function showLove() {
+  document.getElementById("secret").style.display = "block";
+}
+
+/* Love letter */
+function openLetter() {
+  document.getElementById("loveLetter").style.display = "block";
+}
+function closeLetter() {
+  document.getElementById("loveLetter").style.display = "none";
+}
+
+/* Tap hearts */
+document.addEventListener("click", function(e) {
+  for (let i = 0; i < 6; i++) {
+    const heart = document.createElement("div");
+    heart.innerHTML = "💖";
+    heart.style.position = "fixed";
+    heart.style.left = e.clientX + "px";
+    heart.style.top = e.clientY + "px";
+    heart.style.fontSize = (16 + Math.random()*20) + "px";
+    heart.style.animation = "burst 1.2s ease-out forwards";
+    document.body.appendChild(heart);
+    setTimeout(() => heart.remove(), 1200);
+  }
+});
+</script>
+
+</body>
+</html>
